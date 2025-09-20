@@ -28,7 +28,7 @@ class UserServiceTest {
 
     @Test
     void createUser_ShouldEncodePasswordAndSaveUser() {
-        User user = new User("testuser", "plainPassword", "test@example.com", "123456", Role.VIEWER);
+        User user = new User("testuser", "plainPassword", "test@example.com", "123456", Role.ADMIN);
 
         // când se apelează save, să întoarcă chiar userul primit (mock behavior)
         when(userRepository.save(any(User.class))).thenAnswer(invocation -> invocation.getArgument(0));
@@ -68,7 +68,7 @@ class UserServiceTest {
 
     @Test
     void updateUser_ShouldUpdateExistingUser() {
-        User existingUser = new User("oldUser", "oldPass", "old@example.com", "111", Role.VIEWER);
+        User existingUser = new User("oldUser", "oldPass", "old@example.com", "111", Role.ADMIN);
         when(userRepository.findById("1")).thenReturn(Optional.of(existingUser));
         when(userRepository.save(any(User.class))).thenAnswer(invocation -> invocation.getArgument(0));
 
@@ -91,7 +91,7 @@ class UserServiceTest {
     void updateUser_ShouldThrowWhenUserNotFound() {
         when(userRepository.findById("99")).thenReturn(Optional.empty());
 
-        User updatedInfo = new User("any", "any", "any", "any", Role.VIEWER);
+        User updatedInfo = new User("any", "any", "any", "any", Role.ADMIN);
 
         Exception exception = assertThrows(RuntimeException.class, () -> {
             userService.updateUser("99", updatedInfo);
@@ -99,4 +99,5 @@ class UserServiceTest {
 
         assertEquals("User not found", exception.getMessage());
     }
+
 }

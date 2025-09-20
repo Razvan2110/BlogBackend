@@ -1,7 +1,16 @@
 //CREATED AT:13/9/2025
 //BY: UNGUREANU RAZVAN
 //CLASS FOR MANAGING POSTS
-
+/**
+ * Represents a blog post stored in the MongoDB collection "posts".
+ * <p>
+ * Each post has a title, content, author, and timestamps for creation and update.
+ * This class is annotated as a MongoDB document and is used by Spring Data.
+ * </p>
+ *
+ * @author Ungureanu
+ * @since 2025-09-13
+ */
 
 package com.example.blog.model;
 
@@ -44,6 +53,9 @@ public class Post {
         this.updatedAt = LocalDateTime.now();
     }
 
+    public Post() {
+    }
+
     public String getId() {
         return id;
     }
@@ -68,9 +80,7 @@ public class Post {
         return updatedAt;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
+
 
     public void setTitle(String title) {
         this.title = title;

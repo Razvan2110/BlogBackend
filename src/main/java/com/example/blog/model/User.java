@@ -39,9 +39,6 @@ public class User {
         this.role = role;
     }
 
-    public String getId() {
-        return id;
-    }
 
     public String getPassword() {
         return password;
