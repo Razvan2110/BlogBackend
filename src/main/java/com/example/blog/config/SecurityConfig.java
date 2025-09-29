@@ -8,6 +8,7 @@ package com.example.blog.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
@@ -23,6 +24,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http, JwtFilter jwtFilter) throws Exception {
         http
                 .csrf(csrf -> csrf.disable())
+                .cors(Customizer.withDefaults()) // ✅ CORS activat în 6.x
                 .authorizeHttpRequests(auth -> auth
                         // login, register
                         .requestMatchers("/api/auth/**").permitAll()
@@ -30,7 +32,7 @@ public class SecurityConfig {
                         // user management doar ADMIN
                         .requestMatchers("/api/users/**").hasRole("ADMIN")
 
-                        // GET posts pentru toată lumea (sau doar autentificați, dacă vrei)
+                        // GET posts pentru toată lumea
                         .requestMatchers(HttpMethod.GET, "/api/posts/**").permitAll()
 
                         // CRUD posts doar ADMIN
@@ -51,3 +53,4 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 }
+
