@@ -1,17 +1,3 @@
-//CREATED AT:13/9/2025
-//BY: UNGUREANU RAZVAN
-//CLASS FOR MANAGING POSTS
-/**
- * Represents a blog post stored in the MongoDB collection "posts".
- * <p>
- * Each post has a title, content, author, and timestamps for creation and update.
- * This class is annotated as a MongoDB document and is used by Spring Data.
- * </p>
- *
- * @author Ungureanu
- * @since 2025-09-13
- */
-
 package com.example.blog.model;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -20,10 +6,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Document(collection = "posts")
-
-@JsonPropertyOrder({ "id", "title", "content", "author", "createdAt", "updatedAt" })
+@JsonPropertyOrder({ "id", "title", "content", "author", "images", "createdAt", "updatedAt" })
 public class Post {
 
     @Id
@@ -36,7 +22,10 @@ public class Post {
     private String content;
 
     @Field("author")
-    private String author; // sau User author;
+    private String author;
+
+    @Field("images")
+    private List<String> images; // poate fi null sau gol
 
     @Field("created_at")
     private LocalDateTime createdAt;
@@ -44,61 +33,30 @@ public class Post {
     @Field("updated_at")
     private LocalDateTime updatedAt;
 
-    // Constructor, getter, setter
-    public Post(String title, String content, String author) {
+    public Post() {}
+
+    public Post(String title, String content, String author, List<String> images) {
         this.title = title;
         this.content = content;
         this.author = author;
+        this.images = images;
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();
     }
 
-    public Post() {
-    }
+    // getters și setters
+    public String getId() { return id; }
+    public String getTitle() { return title; }
+    public String getContent() { return content; }
+    public String getAuthor() { return author; }
+    public List<String> getImages() { return images; }
+    public LocalDateTime getCreatedAt() { return createdAt; }
+    public LocalDateTime getUpdatedAt() { return updatedAt; }
 
-    public String getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
-
-    public LocalDateTime getUpdatedAt() {
-        return updatedAt;
-    }
-
-
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public void setUpdatedAt(LocalDateTime updatedAt) {
-        this.updatedAt = updatedAt;
-    }
+    public void setTitle(String title) { this.title = title; }
+    public void setContent(String content) { this.content = content; }
+    public void setAuthor(String author) { this.author = author; }
+    public void setImages(List<String> images) { this.images = images; }
+    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
+    public void setUpdatedAt(LocalDateTime updatedAt) { this.updatedAt = updatedAt; }
 }

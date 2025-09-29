@@ -1,9 +1,3 @@
-//CREATED AT:13/9/2025
-//BY: UNGUREANU RAZVAN
-//CLASS FOR MANAGING POSTS
-
-
-
 package com.example.blog.service;
 
 import com.example.blog.model.Post;
@@ -11,6 +5,7 @@ import com.example.blog.model.repository.PostRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -27,21 +22,19 @@ public class PostService {
         LocalDateTime now = LocalDateTime.now();
         post.setCreatedAt(now);
         post.setUpdatedAt(now);
+
+        if (post.getImages() == null) post.setImages(new ArrayList<>());
         return postRepository.save(post);
     }
 
-
-    // Returnează toate postările
     public List<Post> getAllPosts() {
         return postRepository.findAll();
     }
 
-    // Returnează o postare după ID
     public Optional<Post> getPostById(String id) {
         return postRepository.findById(id);
     }
 
-    // Update postare după ID
     public Post updatePost(String id, Post updatedPost) {
         Post post = postRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Post not found"));
@@ -50,13 +43,25 @@ public class PostService {
         post.setContent(updatedPost.getContent());
         post.setAuthor(updatedPost.getAuthor());
         post.setUpdatedAt(LocalDateTime.now());
+        post.setImages(updatedPost.getImages() != null ? updatedPost.getImages() : new ArrayList<>());
 
         return postRepository.save(post);
     }
 
-
-    // Șterge postare după ID
     public void deletePost(String id) {
         postRepository.deleteById(id);
+    }
+
+    // Adaugă o imagine la o postare existentă
+    public Post addImageToPost(String id, String imageUrl) {
+        Post post = postRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Post not found"));
+
+        List<String> images = post.getImages();
+        if (images == null) images = new ArrayList<>();
+        images.add(imageUrl);
+        post.setImages(images);
+
+        return postRepository.save(post);
     }
 }
