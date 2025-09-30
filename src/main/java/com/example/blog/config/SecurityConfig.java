@@ -40,6 +40,11 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.PUT, "/api/posts/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.DELETE, "/api/posts/**").hasRole("ADMIN")
 
+
+                        // CRUD homepagePost
+                        .requestMatchers(HttpMethod.GET, "/api/homepage/**").permitAll() // toată lumea poate citi
+                        .requestMatchers("/api/homepage/**").hasRole("ADMIN")           // doar adminul poate crea/update/delete
+
                         // orice altceva → login necesar
                         .anyRequest().authenticated()
                 )
