@@ -9,7 +9,11 @@ import com.example.blog.service.EmailService;
 import com.example.blog.service.OtpService;
 import com.example.blog.service.UserService;
 import com.example.blog.util.JwtUtil;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -26,46 +30,61 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public String login(@RequestParam String username, @RequestParam String password) {
+    public ResponseEntity<Map<String, String>> login(@RequestBody Map<String, String> body) {
+        String email = body.get("email");
+        String password = body.get("password");
+
         User user = userService.getAllUsers().stream()
-                .filter(u -> u.getUsername().equals(username))
+                .filter(u -> u.getEmail().equals(email))
                 .findFirst()
                 .orElse(null);
 
         if (user == null) {
-            return "User not found";
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(Map.of("message", "User not found"));
         }
 
-        // verifică parola
         if (!userService.getPasswordEncoder().matches(password, user.getPassword())) {
-            return "Parolă incorectă";
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                    .body(Map.of("message", "Parolă incorectă"));
         }
 
-        // trimite OTP pe email
         String otp = emailService.sendOtp(user.getEmail());
-        otpService.storeOtp(username, otp);
+        otpService.storeOtp(email, otp);
 
-        return "OTP trimis pe email. Introdu-l pentru autentificare.";
+        return ResponseEntity.ok(Map.of("message", "OTP trimis pe email. Introdu-l pentru autentificare."));
     }
 
+
+
     @PostMapping("/verify-otp")
-    public String verifyOtp(@RequestParam String username, @RequestParam String otp) {
-        if (otpService.validateOtp(username, otp)) {
+    public ResponseEntity<Map<String, String>> verifyOtp(@RequestBody Map<String, String> body) {
+        String email = body.get("email");
+        String otp = body.get("otp");
+
+        if (otpService.validateOtp(email, otp)) {
             User user = userService.getAllUsers().stream()
-                    .filter(u -> u.getUsername().equals(username))
+                    .filter(u -> u.getEmail().equals(email))
                     .findFirst()
                     .orElse(null);
 
             if (user == null) {
-                return "User not found";
+                return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                        .body(Map.of("message", "User not found"));
             }
 
-            // generează token cu rolul userului
-            String token = JwtUtil.generateToken(username, user.getRole().name());
-
-            return "Autentificare reușită! Token JWT: " + token;
+            String token = JwtUtil.generateToken(email, user.getRole().name());
+            return ResponseEntity.ok(Map.of(
+                    "message", "Autentificare reușită!",
+                    "token", token
+            ));
         }
-        return "OTP invalid!";
+
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                .body(Map.of("message", "OTP invalid!"));
     }
+
+
+
 
 }
