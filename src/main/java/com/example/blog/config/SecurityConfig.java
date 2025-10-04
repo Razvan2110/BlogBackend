@@ -40,6 +40,11 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.PUT, "/api/posts/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.DELETE, "/api/posts/**").hasRole("ADMIN")
 
+                        // ⚡ upload imagine → doar ADMIN
+                        .requestMatchers(HttpMethod.POST, "/api/posts/*/upload-image").hasRole("ADMIN")
+
+                        // ⚡ acces public la fișiere statice (poze)
+                        .requestMatchers("/uploads/**").permitAll()
 
                         // CRUD homepagePost
                         .requestMatchers(HttpMethod.GET, "/api/homepage/**").permitAll() // toată lumea poate citi

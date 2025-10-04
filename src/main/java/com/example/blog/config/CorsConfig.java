@@ -5,12 +5,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Value;
 
 @Configuration
-public class CorsConfig {
+public class CorsConfig implements WebMvcConfigurer {
 
     @Value("${frontend.url.dev}")
     private String devUrl;
@@ -18,6 +20,7 @@ public class CorsConfig {
     @Value("${frontend.url.prod}")
     private String prodUrl;
 
+    // --- CORS ---
     @Bean
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
@@ -30,5 +33,11 @@ public class CorsConfig {
         source.registerCorsConfiguration("/**", config);
         return new CorsFilter(source);
     }
-}
 
+    // --- Resource handler pentru imaginile uploadate ---
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/uploads/images/**")
+                .addResourceLocations("file:uploads/images/");
+    }
+}
