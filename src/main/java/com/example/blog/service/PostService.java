@@ -43,8 +43,9 @@ public class PostService {
         post.setContent(updatedPost.getContent());
         post.setAuthor(updatedPost.getAuthor());
         post.setUpdatedAt(LocalDateTime.now());
-        post.setImages(updatedPost.getImages() != null ? updatedPost.getImages() : new ArrayList<>());
-
+        if (updatedPost.getImages() != null) {
+            post.setImages(updatedPost.getImages());
+        }
         return postRepository.save(post);
     }
 
