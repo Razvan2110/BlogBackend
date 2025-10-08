@@ -6,6 +6,7 @@
 package com.example.blog.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -13,6 +14,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @Document(collection = "users")  // corespunde colecției din MongoDB
 public class User {
     @Id
+    @JsonProperty("_id")
     private String id;  // adnotare pentru cheia primară, MongoDB folosește _id
 
     @Field("username")
