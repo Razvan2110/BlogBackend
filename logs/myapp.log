@@ -1,0 +1,243 @@
+2025-10-11 14:24:26 [restartedMain] INFO  com.example.blog.BlogApplication - Starting BlogApplication using Java 23.0.2 with PID 18536 (C:\Users\razva\OneDrive\Desktop\ProiectBlogBackend\blogPasswordAdmin\blog\target\classes started by razva in C:\Users\razva\OneDrive\Desktop\ProiectBlogBackend\blogPasswordAdmin\blog)
+2025-10-11 14:24:26 [restartedMain] INFO  com.example.blog.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-11 14:24:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-11 14:24:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-11 14:24:27 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-10-11 14:24:27 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 107 ms. Found 3 MongoDB repository interfaces.
+2025-10-11 14:24:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-11 14:24:28 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-11 14:24:28 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-11 14:24:28 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-11 14:24:28 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2644 ms
+2025-10-11 14:24:28 [restartedMain] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2025-10-11 14:24:29 [restartedMain] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/23.0.2+7-58"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5a7d61a2, com.mongodb.Jep395RecordCodecProvider@33b82d4f, com.mongodb.KotlinCodecProvider@35f68a83]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-10-11 14:24:29 [cluster-ClusterId{value='68ea3e6d817fa54fd79aafbe', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=69778000, minRoundTripTimeNanos=0}
+2025-10-11 14:24:29 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-11 14:24:30 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-10-11 14:24:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-11 14:24:30 [restartedMain] INFO  com.example.blog.BlogApplication - Started BlogApplication in 6.011 seconds (process running for 8.407)
+2025-10-11 14:26:58 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-11 14:26:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-11 14:26:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-10-11 14:26:58 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/auth/login]
+2025-10-11 14:27:02 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/auth/login, payload={"email":"razvan_ungureanu2002@yahoo.com","password":"admin"}]
+2025-10-11 14:27:15 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/auth/verify-otp]
+2025-10-11 14:27:15 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/auth/verify-otp, payload={"email":"razvan_ungureanu2002@yahoo.com","otp":"850324"}]
+2025-10-11 14:27:15 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:27:16 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:27:16 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:27:16 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:27:33 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/users]
+2025-10-11 14:27:33 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/users]
+2025-10-11 14:27:33 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/users]
+2025-10-11 14:27:33 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/users]
+2025-10-11 14:27:53 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/users]
+2025-10-11 14:27:53 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/users, payload={"id":null,"username":"aaa","password":"aaaaa","email":"aaaaa@yahoo.com","phone":"5555555","role":"ADMIN"}]
+2025-10-11 14:27:53 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/users]
+2025-10-11 14:27:53 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/users]
+2025-10-11 14:28:03 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [PUT /api/users/68ea3f39817fa54fd79aafbf]
+2025-10-11 14:28:04 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : PUT /api/users/68ea3f39817fa54fd79aafbf, payload={"id":"68ea3f39817fa54fd79aafbf","username":"aaadddd","password":"aaaaa","email":"aaaaa@yahoo.com","phone":"5555555","role":"ADMIN"}]
+2025-10-11 14:28:04 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/users]
+2025-10-11 14:28:04 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/users]
+2025-10-11 14:28:13 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [DELETE /api/users/68ea3f39817fa54fd79aafbf]
+2025-10-11 14:28:13 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : DELETE /api/users/68ea3f39817fa54fd79aafbf]
+2025-10-11 14:28:19 [http-nio-8080-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [PUT /api/users/68ea3f39817fa54fd79aafbf]
+2025-10-11 14:28:19 [http-nio-8080-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : PUT /api/users/68ea3f39817fa54fd79aafbf, payload={"id":"68ea3f39817fa54fd79aafbf","username":"bbbb","password":"bbb","email":"aaaaa@yahoo.com","phone":"5555555","role":"ADMIN"}]
+2025-10-11 14:28:23 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/posts]
+2025-10-11 14:28:23 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/posts]
+2025-10-11 14:28:23 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/posts]
+2025-10-11 14:28:23 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/posts]
+2025-10-11 14:28:23 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1759583889247_133962715052768584.jpg]
+2025-10-11 14:28:23 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1759583889247_133962715052768584.jpg]
+2025-10-11 14:28:23 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/users]
+2025-10-11 14:28:23 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/users]
+2025-10-11 14:28:23 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/users]
+2025-10-11 14:28:23 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/users]
+2025-10-11 14:28:36 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/users]
+2025-10-11 14:28:37 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/users, payload={"id":null,"username":"bbbbb","password":"bbb","email":"bbb@yyyy.com","phone":"4444","role":"ADMIN"}]
+2025-10-11 14:28:37 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/users]
+2025-10-11 14:28:37 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/users]
+2025-10-11 14:28:45 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [PUT /api/users/68ea3f65817fa54fd79aafc0]
+2025-10-11 14:28:45 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : PUT /api/users/68ea3f65817fa54fd79aafc0, payload={"id":"68ea3f65817fa54fd79aafc0","username":"bbbbbccccccccc","password":"bbb","email":"bbb@yyyy.com","phone":"4444","role":"ADMIN"}]
+2025-10-11 14:28:45 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/users]
+2025-10-11 14:28:45 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/users]
+2025-10-11 14:28:48 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/posts]
+2025-10-11 14:28:48 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/posts]
+2025-10-11 14:28:48 [http-nio-8080-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/posts]
+2025-10-11 14:28:48 [http-nio-8080-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/posts]
+2025-10-11 14:28:48 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1759583889247_133962715052768584.jpg]
+2025-10-11 14:28:48 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1759583889247_133962715052768584.jpg]
+2025-10-11 14:29:40 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1760025603147_133902597165088341.jpg]
+2025-10-11 14:29:40 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1760025960744_133962715052768584.jpg]
+2025-10-11 14:29:40 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1760025603147_133902597165088341.jpg]
+2025-10-11 14:29:40 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1760025960744_133962715052768584.jpg]
+2025-10-11 14:29:41 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1760025618362_133955231335918438.jpg]
+2025-10-11 14:29:41 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1760025637993_133899979119738889.jpg]
+2025-10-11 14:29:41 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1760025618362_133955231335918438.jpg]
+2025-10-11 14:29:41 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1760025637993_133899979119738889.jpg]
+2025-10-11 14:29:41 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1760026217781_133902597165088341.jpg]
+2025-10-11 14:29:41 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1760026217781_133902597165088341.jpg]
+2025-10-11 14:29:46 [http-nio-8080-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [PUT /api/posts/68e11e8978eac326aac766eb]
+2025-10-11 14:29:46 [http-nio-8080-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : PUT /api/posts/68e11e8978eac326aac766eb, payload={"title":"dddd","content":"ddddaaaaaaaaaaaaa","author":"ddddd"}]
+2025-10-11 14:29:53 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [PUT /api/posts/68e11e8978eac326aac766eb]
+2025-10-11 14:29:53 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : PUT /api/posts/68e11e8978eac326aac766eb, payload={"title":"ddddaaaaaaaaaaaaaaaaa","content":"ddddaaaaaaaaaaaaa","author":"ddddd"}]
+2025-10-11 14:30:28 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-11 14:30:28 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-11 14:30:39 [restartedMain] INFO  com.example.blog.BlogApplication - Starting BlogApplication using Java 23.0.2 with PID 22824 (C:\Users\razva\OneDrive\Desktop\ProiectBlogBackend\blogPasswordAdmin\blog\target\classes started by razva in C:\Users\razva\OneDrive\Desktop\ProiectBlogBackend\blogPasswordAdmin\blog)
+2025-10-11 14:30:39 [restartedMain] INFO  com.example.blog.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-11 14:30:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-11 14:30:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-11 14:30:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-10-11 14:30:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 125 ms. Found 3 MongoDB repository interfaces.
+2025-10-11 14:30:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-11 14:30:43 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-11 14:30:43 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-11 14:30:44 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-11 14:30:44 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3910 ms
+2025-10-11 14:30:44 [restartedMain] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2025-10-11 14:30:44 [restartedMain] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/23.0.2+7-58"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4004ceef, com.mongodb.Jep395RecordCodecProvider@49eb22b8, com.mongodb.KotlinCodecProvider@5882832b]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-10-11 14:30:44 [cluster-ClusterId{value='68ea3fe48811205f60f1c457', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=55787700, minRoundTripTimeNanos=0}
+2025-10-11 14:30:45 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-11 14:30:46 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-10-11 14:30:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-11 14:30:47 [restartedMain] INFO  com.example.blog.BlogApplication - Started BlogApplication in 9.253 seconds (process running for 11.696)
+2025-10-11 14:30:47 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-11 14:30:47 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-11 14:30:47 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-10-11 14:30:48 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/auth/login]
+2025-10-11 14:30:52 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/auth/login, payload={"email":"razvan_ungureanu2002@yahoo.com","password":"admin"}]
+2025-10-11 14:31:02 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/auth/verify-otp]
+2025-10-11 14:31:02 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/auth/verify-otp, payload={"email":"razvan_ungureanu2002@yahoo.com","otp":"644713"}]
+2025-10-11 14:31:02 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:31:02 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:31:02 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:31:02 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:31:04 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/posts]
+2025-10-11 14:31:04 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/posts]
+2025-10-11 14:31:04 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/posts]
+2025-10-11 14:31:04 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/posts]
+2025-10-11 14:31:04 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1759583889247_133962715052768584.jpg]
+2025-10-11 14:31:04 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1759583889247_133962715052768584.jpg]
+2025-10-11 14:31:13 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/posts]
+2025-10-11 14:31:13 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/posts, payload={"title":"ttt","content":"tttttttttttt","author":"ttttttt"}]
+2025-10-11 14:31:13 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/posts/68ea40018811205f60f1c458/upload-image]
+2025-10-11 14:31:14 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/posts/68ea40018811205f60f1c458/upload-image]
+2025-10-11 14:31:14 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1760182274125_133955231330805582.jpg]
+2025-10-11 14:31:14 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1760182274125_133955231330805582.jpg]
+2025-10-11 14:31:25 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [PUT /api/posts/68ea40018811205f60f1c458]
+2025-10-11 14:31:25 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : PUT /api/posts/68ea40018811205f60f1c458, payload={"title":"tttffffff","content":"tttttttttttt","author":"ttttttt"}]
+2025-10-11 14:31:36 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/posts]
+2025-10-11 14:31:36 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/posts, payload={"title":"ggg","content":"ggggggggggg","author":"gggggg"}]
+2025-10-11 14:31:36 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/posts/68ea40188811205f60f1c459/upload-image]
+2025-10-11 14:31:36 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/posts/68ea40188811205f60f1c459/upload-image]
+2025-10-11 14:31:36 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1760182296272_133962715052768584.jpg]
+2025-10-11 14:31:36 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1760182296272_133962715052768584.jpg]
+2025-10-11 14:31:56 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/posts]
+2025-10-11 14:31:56 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/posts, payload={"title":"hhhh","content":"hhhhhhhhhhh","author":"hhhhhhhhh"}]
+2025-10-11 14:31:56 [http-nio-8080-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/posts/68ea402c8811205f60f1c45a/upload-image]
+2025-10-11 14:31:56 [http-nio-8080-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/posts/68ea402c8811205f60f1c45a/upload-image]
+2025-10-11 14:31:57 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1760182316950_133792568594972350.jpg]
+2025-10-11 14:31:57 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1760182316950_133792568594972350.jpg]
+2025-10-11 14:32:05 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [DELETE /api/posts/68ea402c8811205f60f1c45a]
+2025-10-11 14:32:05 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : DELETE /api/posts/68ea402c8811205f60f1c45a]
+2025-10-11 14:32:25 [http-nio-8080-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:32:25 [http-nio-8080-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:32:25 [http-nio-8080-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:32:25 [http-nio-8080-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:32:26 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/posts]
+2025-10-11 14:32:26 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/posts]
+2025-10-11 14:32:26 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/posts]
+2025-10-11 14:32:26 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/posts]
+2025-10-11 14:32:26 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1759583889247_133962715052768584.jpg]
+2025-10-11 14:32:26 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1759583889247_133962715052768584.jpg]
+2025-10-11 14:32:26 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:32:26 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:32:26 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:32:26 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:32:32 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [PUT /api/homepage/68e22e99532bf998c9935041]
+2025-10-11 14:32:32 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : PUT /api/homepage/68e22e99532bf998c9935041, payload={"author":"aaaaaaaaaaaaaabbbbbbbbbbbbbbbb","content":"aaaaaaaaaaaaaaaabbbbbggggg"}]
+2025-10-11 14:32:32 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:32:32 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:32:36 [http-nio-8080-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [DELETE /api/homepage/68e22e99532bf998c9935041]
+2025-10-11 14:32:36 [http-nio-8080-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : DELETE /api/homepage/68e22e99532bf998c9935041]
+2025-10-11 14:32:36 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:32:36 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:32:38 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/homepage]
+2025-10-11 14:32:38 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/homepage, payload={"author":"aaaaaaaa","content":"aaaa"}]
+2025-10-11 14:32:38 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:32:38 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:32:44 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [PUT /api/homepage/68ea40568811205f60f1c45b]
+2025-10-11 14:32:44 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : PUT /api/homepage/68ea40568811205f60f1c45b, payload={"author":"aaaaaaaa","content":"aaaabbbbbb"}]
+2025-10-11 14:32:44 [http-nio-8080-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:32:44 [http-nio-8080-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:32:48 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:32:48 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:32:48 [http-nio-8080-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:32:48 [http-nio-8080-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:32:55 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-11 14:32:55 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-11 14:41:05 [restartedMain] INFO  com.example.blog.BlogApplication - Starting BlogApplication using Java 23.0.2 with PID 17464 (C:\Users\razva\OneDrive\Desktop\ProiectBlogBackend\blogPasswordAdmin\blog\target\classes started by razva in C:\Users\razva\OneDrive\Desktop\ProiectBlogBackend\blogPasswordAdmin\blog)
+2025-10-11 14:41:05 [restartedMain] INFO  com.example.blog.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-11 14:41:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-11 14:41:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-11 14:41:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-10-11 14:41:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 167 ms. Found 3 MongoDB repository interfaces.
+2025-10-11 14:41:08 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-11 14:41:08 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-11 14:41:08 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-11 14:41:08 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-11 14:41:08 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3198 ms
+2025-10-11 14:41:09 [restartedMain] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2025-10-11 14:41:09 [restartedMain] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/23.0.2+7-58"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@38c747d2, com.mongodb.Jep395RecordCodecProvider@76641c96, com.mongodb.KotlinCodecProvider@357fb3e7]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-10-11 14:41:09 [cluster-ClusterId{value='68ea4255e0fa7c1c1a86197b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=125330200, minRoundTripTimeNanos=0}
+2025-10-11 14:41:10 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-11 14:41:10 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-10-11 14:41:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-11 14:41:11 [restartedMain] INFO  com.example.blog.BlogApplication - Started BlogApplication in 6.571 seconds (process running for 8.071)
+2025-10-11 14:44:49 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-11 14:44:49 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-11 14:44:49 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-10-11 14:44:50 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/auth/login]
+2025-10-11 14:44:53 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/auth/login, payload={"email":"razvan_ungureanu2002@yahoo.com","password":"admin"}]
+2025-10-11 14:45:06 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/auth/verify-otp]
+2025-10-11 14:45:07 [http-nio-8080-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/auth/verify-otp, payload={"email":"razvan_ungureanu2002@yahoo.com","otp":"732946"}]
+2025-10-11 14:45:07 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:45:07 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:45:07 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/homepage]
+2025-10-11 14:45:07 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/homepage]
+2025-10-11 14:45:09 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/posts]
+2025-10-11 14:45:09 [http-nio-8080-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/posts]
+2025-10-11 14:45:09 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/posts]
+2025-10-11 14:45:09 [http-nio-8080-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/posts]
+2025-10-11 14:45:09 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1759583889247_133962715052768584.jpg]
+2025-10-11 14:45:09 [http-nio-8080-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1759583889247_133962715052768584.jpg]
+2025-10-11 14:45:24 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/posts]
+2025-10-11 14:45:24 [http-nio-8080-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/posts, payload={"title":"dd","content":"ddddddd","author":"dddddd"}]
+2025-10-11 14:45:24 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/posts/68ea4354e0fa7c1c1a86197c/upload-image]
+2025-10-11 14:45:24 [http-nio-8080-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/posts/68ea4354e0fa7c1c1a86197c/upload-image]
+2025-10-11 14:45:24 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /uploads/images/1760183124329_133955231330805582.jpg]
+2025-10-11 14:45:24 [http-nio-8080-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : GET /uploads/images/1760183124329_133955231330805582.jpg]
+2025-10-11 14:45:31 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [DELETE /api/posts/68ea4354e0fa7c1c1a86197c]
+2025-10-11 14:45:31 [http-nio-8080-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - REQUEST DATA : DELETE /api/posts/68ea4354e0fa7c1c1a86197c]
+2025-10-11 14:45:39 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-11 14:45:39 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-11 17:05:48 [restartedMain] INFO  com.example.blog.BlogApplication - Starting BlogApplication using Java 23.0.2 with PID 20512 (C:\Users\razva\OneDrive\Desktop\ProiectBlogBackend\blogPasswordAdmin\blog\target\classes started by razva in C:\Users\razva\OneDrive\Desktop\ProiectBlogBackend\blogPasswordAdmin\blog)
+2025-10-11 17:05:48 [restartedMain] INFO  com.example.blog.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-11 17:05:48 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-11 17:05:48 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-11 17:05:49 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-10-11 17:05:50 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 159 ms. Found 3 MongoDB repository interfaces.
+2025-10-11 17:05:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-11 17:05:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-11 17:05:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-11 17:05:51 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-11 17:05:51 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2846 ms
+2025-10-11 17:05:51 [restartedMain] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2025-10-11 17:05:51 [restartedMain] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/23.0.2+7-58"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@579c8855, com.mongodb.Jep395RecordCodecProvider@18f7f9af, com.mongodb.KotlinCodecProvider@3468a2af]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-10-11 17:05:51 [cluster-ClusterId{value='68ea643f4cb2c92b6ee6e046', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=55393100, minRoundTripTimeNanos=0}
+2025-10-11 17:05:51 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-11 17:05:52 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-10-11 17:05:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-11 17:05:53 [restartedMain] INFO  com.example.blog.BlogApplication - Started BlogApplication in 5.88 seconds (process running for 7.393)
+2025-10-11 17:06:07 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-11 17:06:07 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
