@@ -24,24 +24,40 @@ public class JwtFilter extends OncePerRequestFilter {
 
         String authHeader = request.getHeader("Authorization");
 
-        if (authHeader != null && authHeader.startsWith("Bearer ")) {
-            String token = authHeader.substring(7); // elimină "Bearer "
+        // dacă nu e /api/auth (login/register), atunci verificăm tokenul
+        String path = request.getRequestURI();
 
-            if (JwtUtil.validateToken(token)) {
-                String username = JwtUtil.getUsernameFromToken(token);
-                String role = JwtUtil.getRoleFromToken(token);
-
-                List<SimpleGrantedAuthority> authorities = List.of(
-                        new SimpleGrantedAuthority("ROLE_" + role)
-                );
-
-                UsernamePasswordAuthenticationToken auth =
-                        new UsernamePasswordAuthenticationToken(username, null, authorities);
-
-                SecurityContextHolder.getContext().setAuthentication(auth);
-            }
+        // ⚠️ exceptăm doar rutele publice
+        if (path.startsWith("/api/auth") || path.startsWith("/uploads")) {
+            filterChain.doFilter(request, response);
+            return;
         }
+
+        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            return;
+        }
+
+        String token = authHeader.substring(7);
+
+        if (!JwtUtil.validateToken(token)) {
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            return;
+        }
+
+        String username = JwtUtil.getUsernameFromToken(token);
+        String role = JwtUtil.getRoleFromToken(token);
+
+        List<SimpleGrantedAuthority> authorities = List.of(
+                new SimpleGrantedAuthority("ROLE_" + role)
+        );
+
+        UsernamePasswordAuthenticationToken auth =
+                new UsernamePasswordAuthenticationToken(username, null, authorities);
+
+        SecurityContextHolder.getContext().setAuthentication(auth);
 
         filterChain.doFilter(request, response);
     }
+
 }
